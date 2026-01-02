@@ -8,7 +8,7 @@ export default hopeTheme({
 
   author: {
     name: "Vita",
-    url: "https://mister-hope.com",
+    url: "https://specialroad.github.io/hi-hub/",
   },
 
   logo: "https://theme-hope-assets.vuejs.press/logo.svg",
