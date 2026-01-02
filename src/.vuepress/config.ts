@@ -1,5 +1,6 @@
 import { defineUserConfig } from "vuepress";
 
+
 import theme from "./theme.js";
 
 export default defineUserConfig({
@@ -10,6 +11,9 @@ export default defineUserConfig({
   description: "Simple Code, Deep Life.",
 
   theme,
+
+
+
 
   // 和 PWA 一起启用
   // shouldPrefetch: false,
