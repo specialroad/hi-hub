@@ -11,7 +11,7 @@ export default hopeTheme({
     url: "https://vitasays.github.io/hi-hub/",
   },
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "/assets/images/my_logo.png",
 
   repo: "vuepress-theme-hope/vuepress-theme-hope",
 
