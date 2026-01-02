@@ -6,8 +6,8 @@ export default defineUserConfig({
   base: "/hi-hub/",
 
   lang: "zh-CN",
-  title: "博客演示",
-  description: "vuepress-theme-hope 的博客演示",
+  title: "VitaLab",
+  description: "Simple Code, Deep Life.",
 
   theme,
 
