@@ -1,3 +1,7 @@
+---
+title: RRT算法  # <-- 这决定了侧边栏显示的文字
+---
+
 # Lula 机器人描述与 XRDF 编辑器 (Lula Robot Description and XRDF Editor)
 
 ## 学习目标
