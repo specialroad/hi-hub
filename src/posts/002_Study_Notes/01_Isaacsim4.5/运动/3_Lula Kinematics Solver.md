@@ -47,13 +47,3 @@ shortTitle: Lula Kinematics Solver            # <-- (可选) 如果标题太长�
 * **B. 物理步订阅 (`_update_scenario`)**：当按钮处于 RUN 状态时，UI 每帧通过物理回调调用 `scenario.update()`。
 * **C. 清理机制 (`cleanup`)**：确保扩展关闭时，移除所有按钮回调，防止内存泄漏或程序崩溃。
 
----
-
-## 三、 🎓 研究生课题适配建议（UR12e 避障规划）
-
-> **针对接触网运维机器人 (UR12e) 的迁移路径：**
-
-1.  **Frame 验证**：在 `setup` 时通过 `get_all_frame_names()` 打印 UR12e 的所有坐标系，准确找到接触网工具的挂载点名称。
-2.  **温启动 (Warm Start)**：Lula IK 求解器会默认使用当前关节位置作为初始猜测值点。在接触网复杂的避障环境中，这有助于快速收敛到最近的解。
-3.  **算法组合（重点）**：IK 本身不具备避障功能。在您的论文中，应将此 **Lula Kinematics Solver**（用于确定末端姿态）与 **RMPflow** 或 **RRT**（用于规划不碰撞的路径）结合使用。
-4.  **自定义描述**：若 UR12e 的运动学报错，需参考教程通过 `Lula Robot Description Editor` 生成专用的 `.yaml` 描述文件。
